@@ -1,0 +1,9 @@
+#cloud-config user-data.txt file
+users:
+  - name: german  #<имя пользователя>
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      #- ssh-rsa AAAAB3Nza......OjbSMRX user@example.com
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+6E6It0Aw/SY8B5Xk/WFWzvkjRDtpoWuD3U//pqZIOozyzugYOvdLuM4lmM+UWJC2oNcc4kJmIf3rIh2t6PkpR5gqVHABezjOhVT7y/GkP7HxQKcpP5mUUMFO+mlHa76IRMFBi91dlh0cUvSPARRk6cip2CzP4HUoI0K/pLqOpII1iYBWFfzwIRf4RDq/lzHlqGHx91lgzEc0qgQTVjDVdAE39RtOb2Zx5vDV2AzGnOF+dE5lALsFeIR1TEb7u9/3oPoEPnkbcupwDtn4b9oPfT0dXNbgkeqTTNxNvhSty0DJPKqZ2LM+uzT7kjQI+rmYd1y5UAV6v0/xHZayyPzTkP0cAlVQATqrpEkdtH5hfq/MMtRG8u29YPm8C/U47kDM2vvFZaBQg+qA8wRSD77szFTvJQtEgP5x88aw8S5l9ava06x79jgzkFDvEI9y3W7ZDcUafL9/YBTQUGO3POPm/zdQmgNRjz+h/0r5c/7oewGJbjR/C1b4A1Mj2fxYGo0= german@home-pc
