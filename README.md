@@ -2,4 +2,4 @@
 
 7.4 task Orchestration
 
-Terraform files
+Terraform and Dashboard files
